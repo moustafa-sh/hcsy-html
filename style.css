@@ -1,0 +1,319 @@
+@font-face {
+    font-family: carto;
+    src: url('Fonts/cartograph-cf/CartographCF-Bold.ttf');
+}
+html, body, #fullheight {
+    min-height: 100% !important;
+    height: 100%;
+}
+html {
+    height: 100%;
+}
+* {
+margin: 0%;
+padding: 0%;
+background-color: #EAE2B7;
+justify-content: center;
+align-items: center;
+}
+h1 {
+    font-family: carto;
+    
+    src: url('Fonts/cartograph-cf/CartographCF-Bold.ttf');
+}
+p {
+    font-family: carto;
+    src: url('Fonts/cartograph-cf/CartographCF-Bold.ttf');
+}
+.container {
+    width: 100%;
+    height: 100%;
+    background: #EAE2B7;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.menu ul{
+    display: inline-flex;
+    margin: 30px 0 0 20px;
+    
+}
+.menu ul li {
+    list-style: none;
+    margin: 0 20px;
+    color: #003049;
+    font-family: carto;
+    src: url('Fonts/cartograph-cf/CartographCF-Bold.ttf');
+    cursor: pointer;
+}
+.logo img{
+    width: 75px;
+    margin-top: -8px;
+    margin-right: 40px;
+}
+.we {
+    position: relative;
+    display: flex;       
+    color: #003049;
+    margin-top: 10px;
+    font-size: 4.3em;
+}
+#type-writer{
+    color: #d62828;
+    margin: 0; width: fit-content;
+    display: inline;
+    font-family: carto;
+    src: url('Fonts/cartograph-cf/CartographCF-Bold.ttf');
+    font-size: 1.7em;
+    position: relative;
+}
+#cursor{
+    display: inline-block;
+    height: 35px; width: 13px; 
+    background-color: #d62828;
+}
+.bott {
+    font-size: 1.6em;
+    white-space: pre-line;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    z-index: 9999;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    width: fit-content;
+    text-align: center; 
+}
+  
+.bot {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.apply{
+    display: flex;
+    margin-top: 50px;
+    cursor: pointer;
+    list-style-type: none;
+    position: relative;
+     font-family: carto;
+    src: url('Fonts/cartograph-cf/CartographCF-Bold.ttf');
+    background-color: transparent;
+    color: #003049;
+    font-size: 3.4em;
+    background: transparent;
+}
+
+.apply h1 a{
+    background-color: transparent !important;
+}
+.oval {
+    width: 250px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fcbf49;
+    text-align: center;
+    cursor: pointer;
+    transition: width 0.4s ease, height 0.4s ease;
+    margin: 0 auto;
+    margin-top: -20px;
+}
+.banner {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;  
+    align-items: center; 
+    text-align: center;
+}
+.blue {
+    width: 100%;
+    height: 400px;
+    background-color: #003049;
+    margin-top: 40px;
+    text-align: left;
+}
+.blue h1{
+    position: absolute;
+    background-color: #003049;
+    color: #fcbf49;
+    font-size: 2.6em;
+    margin-left: 6%;
+}
+.p1 {
+    position: absolute;
+    background-color: #003049;
+    margin-top: 100px;
+    margin-left: 6%;
+    font-size: 1.2em;
+    color: #EAE2B7;
+}
+
+.p2 {
+    position: absolute;
+    background-color: #003049;
+    margin-top: 170px;
+    margin-left: 6%;
+    font-size: 1.2em;
+    color: #EAE2B7;
+}
+.p3 {
+    position: absolute;
+    background-color: #003049;
+    margin-top: 240px;
+    margin-left: 6%;
+    font-size: 1.2em;
+    color: #EAE2B7;
+}
+.p4 {
+    position: absolute;
+    background-color: #003049;
+    margin-top: 330px;
+    margin-left: 6%;
+    font-size: 1.2em;
+    color: #fcbf49;
+}
+.pros {
+    width: 100%;
+    height: 700px;
+}
+.pros h1{
+    margin-top: 15px;
+    text-align: center;
+    color: #003049;
+    font-size: 3em;
+}
+.sur {
+    width: 40%;
+    height: 280px;
+    background-color: #fcbf49;
+    margin-left: 6%;
+    border-radius: 17%;
+    margin-top: 30px;
+    box-shadow: 0px 20px #d62828;   
+    cursor: pointer;
+}
+.wip1 {
+    padding-bottom: 10px;
+}
+.sur h1{
+    background-color: transparent;
+    font-size: 2.3em;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #d62828;
+}
+.sur p{
+    background-color: transparent;
+    margin-left: 10px;
+    font-size: 1.1em;
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 10px;
+    color: #003049;
+}
+.hcsy{
+    width: 40%;
+    height: 470px;
+    background-color: #fcbf49;
+    margin-left: 53%;
+    border-radius: 17%;
+    margin-top: 10px;
+    box-shadow: 0px 20px #d62828;
+    position: absolute;
+    margin-top: -280px;
+    cursor: pointer;
+}
+.hcsy h1 {
+    background-color: transparent;
+    font-size: 2.1em;
+    margin-top: 10px;
+    color: #d62828;
+}
+.hcsy p{
+    background-color: transparent;
+    margin-left: 10px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #003049 ;
+}
+.hole {
+    width: 40%;
+    height: 470px;
+    background-color: #fcbf49;
+    margin-left: 6%;
+    border-radius: 17%;
+    margin-top: 30px;
+    box-shadow: 0px 20px #d62828;
+    padding-top: 10px; 
+    cursor: pointer;  
+}
+.hole h1 {
+    background-color: transparent;
+    font-size: 2.3em;
+    margin-top: 10px;
+    color: #d62828;
+}
+.hole p {
+    background-color: transparent;
+    margin-left: 10px;
+    font-size: 1.1em;
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    width: 70%;
+    margin: 0 auto;
+    color: #003049;
+}
+.more {
+    width: 40%;
+    height: 280px;
+    background-color: #fcbf49;
+    margin-left: 53%;
+    border-radius: 17%;
+    margin-top: 10px;
+    box-shadow: 0px 20px #d62828;
+    position: absolute;
+    margin-top: -284px;
+    cursor: pointer;
+}
+.more h1 {
+    background-color: transparent;
+    font-size: 2.3em;
+    margin-top: 10px;
+    color: #d62828;
+}
+.more p{
+    background-color: transparent;
+    margin-left: 10px;
+    font-size: 1.2em;
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    width: 90%;
+    margin: 0 auto;
+    color: #003049;
+}
+.space {
+    height: 50px;
+    width: 400px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    font-family: carto;
+    src: url('Fonts/cartograph-cf/CartographCF-Bold.ttf');
+    color: #d62828;
+}
+#projects-link {
+    text-decoration: none;
+    color: #003049;
+}
