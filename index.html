@@ -28,7 +28,7 @@
         <a target="_blank" href="https://forms.fillout.com/t/obHQJWwevEus"><div class="oval" id="oval"></div></a>
         <div class="blue">
             <h1>* HackClub Syria</h1>
-            
+            <img class="loko" id="loko" src="media/logo.png" alt="">
             <p class="p1">is an online countrywide computer science club for Syrian high schoolers.</p>
             <p class="p2">We build open source projects that are:<br>nerdy, artistic, cool and kickass.</p>
             <p class="p3">We welcome any syrian highschooler with interest of contributing to our projects.</p>
@@ -103,5 +103,17 @@ document.querySelector('a[href="#projects"]').addEventListener('click', function
       }
     }, scrollInterval);
   });</script>
+  <script>
+    window.addEventListener('resize', function() {
+  var lokoElement = document.getElementById('loko');
+
+  if (window.innerWidth <= 1100) {
+    lokoElement.style.display = 'none';
+  } else {
+    lokoElement.style.display = 'block';
+  }
+});
+  </script>
+  
 </body>
 </html>
