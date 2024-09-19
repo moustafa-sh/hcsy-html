@@ -3,9 +3,6 @@
     src: url('Fonts/cartograph-cf/CartographCF-Bold.ttf');
 }
 
-* {
-    padding: 0%;
-}
 
 html,
 body,
@@ -16,9 +13,16 @@ body,
 
 html {
     height: 100%;
-    max-width: 100%;
 }
 
+.unselactable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
 body {
     background-color: #EAE2B7;
@@ -26,7 +30,9 @@ body {
 }
 
 h1 {
+    color: #003049;
     font-family: carto;
+    font-size: 2.6rem
 }
 
 p {
@@ -43,16 +49,15 @@ a {
     background: #EAE2B7;
 }
 
-.menu ul {
-    display: inline-flex;
-    margin: 30px 0 0 20px;
-
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
 }
 
-.menu ul li {
-    list-style: none;
-    margin: 0 20px;
-    color: #003049;
+nav ul li {
+
+    margin-right: 1em;
     font-family: carto;
     cursor: pointer;
 }
@@ -64,7 +69,6 @@ a {
 }
 
 .we {
-    position: relative;
     display: flex;
     justify-content: center;
     color: #003049;
@@ -73,11 +77,27 @@ a {
     margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 1100px) {
-    #loko {
+@media screen and (max-width: 785px) {
+    .loko {
         display: none;
     }
+
+    .pros {
+        grid-template-columns: [] 1fr [];
+    }
+
+    .pros {
+        grid-template-columns: [] 1fr [];
+    }
 }
+
+@media screen and (min-width: 785px) {
+    .pros {
+        grid-template-columns: [] 1fr [] 1fr [];
+    }
+
+}
+
 
 #type-writer {
     color: #d62828;
@@ -134,196 +154,68 @@ a {
     background: #fcbf49;
     cursor: pointer;
     transition: width 0.4s ease, height 0.4s ease;
-    margin-top: -20px;
+    position: absolute;
+    top: -0.8em;
 }
 
 #ovalwraper {
-    z-index: 15;
+    z-index: -1;
     display: flex;
     justify-content: center;
+    position: relative;
+    height: 1em;
 }
 
 
-.blue {
-    background-color: #003049;
-    display: flex;
+
+.loko {
+    position: relative;
+}
+
+.loko img {
+    position: absolute;
+    right: 50%
+}
+
+
+.blue .about {
     padding: 2rem;
-}
-
-
-.blue h1 {
     background-color: #003049;
-    color: #fcbf49;
-    font-size: 2.6em;
-    margin-left: 6%;
 }
 
-.blue p {
+.blue .about h1 {
+    color: #fcbf49;
+}
+
+.blue .about p {
     max-width: 700px;
     font-size: 1.2em;
     color: #EAE2B7;
 }
 
-.blue p:not(:last-child) {
+.blue .about p:not(:last-child) {
     margin-bottom: 1rem;
 }
 
-
-.blue img {
-    width: 200px;
-    margin-left: auto
+.pros {
+    display: grid;
+    grid-template-rows: [] 1fr [] 1fr [];
+    gap: 1em;
 }
 
-
-.hidden {
-    display: none;
+.pros div {
+    background: #FCBF49;
+    border-radius: 50px;
+    border-bottom: 20px solid orange;
+    padding: 1em
 }
 
-.projects {
-    width: 100%;
-    height: 700px;
+.pros div h1 {
+    padding-left: 0.5em;
 }
 
-.projects h1 {
-    margin-top: 15px;
-    text-align: center;
-    color: #003049;
-    font-size: 3em;
-}
-
-.sur {
-    width: 40%;
-    height: 280px;
-    background-color: #fcbf49;
-    margin-left: 8%;
-    border-radius: 17%;
-    margin-top: 30px;
-    box-shadow: 0px 20px #d62828;
-    cursor: pointer;
-    max-width: 500px;
-}
-
-.wip1 {
-    padding-bottom: 10px;
-}
-
-.sur h1 {
-    background-color: transparent;
-    font-size: 2.3em;
-    margin-top: 10px;
-    cursor: pointer;
-    color: #d62828;
-}
-
-.sur p {
-    background-color: transparent;
-    margin-left: 10px;
-    font-size: 1.1em;
-    width: 85%;
-    margin: 0 auto;
-    padding-top: 10px;
-    color: #003049;
-}
-
-.hcsy {
-    width: 40%;
-    height: 470px;
-    background-color: #fcbf49;
-    margin-left: 53%;
-    border-radius: 17%;
-    margin-top: 10px;
-    box-shadow: 0px 20px #d62828;
-    position: absolute;
-    margin-top: -280px;
-    cursor: pointer;
-    max-width: 500px;
-}
-
-.hcsy h1 {
-    background-color: transparent;
-    font-size: 2.1em;
-    margin-top: 10px;
-    color: #d62828;
-}
-
-.hcsy p {
-    background-color: transparent;
-    margin-left: 10px;
-    padding-top: 30px;
-    margin-bottom: 20px;
-    width: 90%;
-    margin: 0 auto;
-    font-size: 1.2em;
-    color: #003049;
-}
-
-.hole {
-    width: 40%;
-    height: 470px;
-    background-color: #fcbf49;
-    margin-left: 8%;
-    border-radius: 17%;
-    margin-top: 30px;
-    box-shadow: 0px 20px #d62828;
-    padding-top: 10px;
-    cursor: pointer;
-    max-width: 500px;
-}
-
-.hole h1 {
-    background-color: transparent;
-    font-size: 2.3em;
-    margin-top: 10px;
-    color: #d62828;
-}
-
-.hole p {
-    background-color: transparent;
-    margin-left: 10px;
-    font-size: 1.1em;
-    width: 85%;
-    margin: 0 auto;
-    padding-top: 10px;
-    margin-bottom: 50px;
-    margin-top: 20px;
-    width: 70%;
-    margin: 0 auto;
-    color: #003049;
-}
-
-.more {
-    width: 40%;
-    height: 280px;
-    background-color: #fcbf49;
-    margin-left: 53%;
-    border-radius: 17%;
-    margin-top: 10px;
-    box-shadow: 0px 20px #d62828;
-    position: absolute;
-    margin-top: -284px;
-    cursor: pointer;
-    max-width: 500px;
-}
-
-.more h1 {
-    background-color: transparent;
-    font-size: 2.3em;
-    margin-top: 10px;
-    color: #d62828;
-}
-
-.more p {
-    background-color: transparent;
-    margin-left: 10px;
-    font-size: 1.2em;
-    width: 85%;
-    margin: 0 auto;
-    padding-top: 10px;
-    margin-bottom: 50px;
-    margin-top: 20px;
-    width: 90%;
-    margin: 0 auto;
-    color: #003049;
+.pros p {
+    font-size: 1.25em;
 }
 
 .space {
@@ -341,4 +233,8 @@ a {
 #projects-link {
     text-decoration: none;
     color: #003049;
+}
+
+.projects {
+    padding: 1em
 }
