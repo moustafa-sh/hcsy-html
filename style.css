@@ -2,205 +2,195 @@
     font-family: carto;
     src: url('Fonts/cartograph-cf/CartographCF-Bold.ttf');
 }
-html, body, #fullheight {
+
+* {
+    padding: 0%;
+}
+
+html,
+body,
+#fullheight {
     min-height: 100% !important;
     height: 100%;
 }
+
 html {
     height: 100%;
+    max-width: 100%;
 }
-* {
-margin: 0%;
-padding: 0%;
-background-color: #EAE2B7;
-justify-content: center;
-align-items: center;
+
+
+body {
+    background-color: #EAE2B7;
+    margin: 0;
 }
+
 h1 {
     font-family: carto;
-    
-    src: url('Fonts/cartograph-cf/CartographCF-Bold.ttf');
 }
+
 p {
     font-family: carto;
-    src: url('Fonts/cartograph-cf/CartographCF-Bold.ttf');
 }
+
+a {
+    text-decoration-line: none
+}
+
 .container {
     width: 100%;
     height: 100%;
     background: #EAE2B7;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
 }
-.menu ul{
+
+.menu ul {
     display: inline-flex;
     margin: 30px 0 0 20px;
-    
+
 }
+
 .menu ul li {
     list-style: none;
     margin: 0 20px;
     color: #003049;
     font-family: carto;
-    src: url('Fonts/cartograph-cf/CartographCF-Bold.ttf');
     cursor: pointer;
 }
-.logo img{
+
+.logo img {
     width: 75px;
     margin-top: -8px;
     margin-right: 40px;
 }
+
 .we {
     position: relative;
-    display: flex;       
+    display: flex;
+    justify-content: center;
     color: #003049;
     margin-top: 10px;
     font-size: 4.3em;
+    margin-bottom: 1rem;
 }
+
 @media screen and (max-width: 1100px) {
-  #loko {
-    display: none;
-  }
+    #loko {
+        display: none;
+    }
 }
-#type-writer{
+
+#type-writer {
     color: #d62828;
-    margin: 0; width: fit-content;
-    display: inline;
+    margin: 0;
+    width: fit-content;
     font-family: carto;
-    src: url('Fonts/cartograph-cf/CartographCF-Bold.ttf');
-    font-size: 1.7em;
+    font-size: 2rem;
     position: relative;
 }
-#cursor{
+
+#cursor {
     display: inline-block;
-    height: 35px; width: 13px; 
+    height: 2rem;
+    width: 1rem;
     background-color: #d62828;
 }
+
 .bott {
-    font-size: 1.6em;
-    white-space: pre-line;
-    margin-bottom: 20px;
-    margin-top: 10px;
     z-index: 9999;
-    display: inline-block;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     position: relative;
-    width: fit-content;
-    text-align: center; 
+    padding: 1rem;
+    height: 1.7rem;
 }
-  
+
 .bot {
     position: relative;
     display: flex;
     justify-content: center;
     text-align: center;
 }
-.apply{
-    display: flex;
-    margin-top: 50px;
-    cursor: pointer;
-    list-style-type: none;
-    position: relative;
-     font-family: carto;
-    src: url('Fonts/cartograph-cf/CartographCF-Bold.ttf');
-    background-color: transparent;
-    color: #003049;
-    font-size: 3.4em;
-    background: transparent;
+
+
+#apply h1 {
+    margin-bottom: 0;
 }
 
-.apply h1 a{
-    background-color: transparent !important;
+#apply {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-family: carto;
+    color: #003049;
+    font-size: 2em;
+    position: relative;
+    z-index: 0;
 }
-.oval {
+
+#oval {
     width: 250px;
     height: 30px;
     border-radius: 50%;
     background: #fcbf49;
-    text-align: center;
     cursor: pointer;
     transition: width 0.4s ease, height 0.4s ease;
-    margin: 0 auto;
     margin-top: -20px;
 }
-.banner {
-    margin: auto;
+
+#ovalwraper {
+    z-index: 15;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    justify-content: center;  
-    align-items: center; 
-    text-align: center;
 }
+
+
 .blue {
-    width: 100%;
-    height: 400px;
     background-color: #003049;
-    margin-top: 40px;
-    text-align: left;
+    display: flex;
+    padding: 2rem;
 }
-.blue h1{
-    position: absolute;
+
+
+.blue h1 {
     background-color: #003049;
     color: #fcbf49;
     font-size: 2.6em;
     margin-left: 6%;
 }
-.blue p{
+
+.blue p {
     max-width: 700px;
-}
-.blue img {
-    width: 200px;
-    position: absolute;
-    margin-left: 70%;
-    margin-top: 40px;
-    background-color: #003049;
-}
-.p1 {
-    position: absolute;
-    background-color: #003049;
-    margin-top: 100px;
-    margin-left: 6%;
     font-size: 1.2em;
     color: #EAE2B7;
 }
+
+.blue p:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+
+.blue img {
+    width: 200px;
+    margin-left: auto
+}
+
+
 .hidden {
     display: none;
 }
-.p2 {
-    position: absolute;
-    background-color: #003049;
-    margin-top: 170px;
-    margin-left: 6%;
-    font-size: 1.2em;
-    color: #EAE2B7;
-}
-.p3 {
-    position: absolute;
-    background-color: #003049;
-    margin-top: 240px;
-    margin-left: 6%;
-    font-size: 1.2em;
-    color: #EAE2B7;
-}
-.p4 {
-    position: absolute;
-    background-color: #003049;
-    margin-top: 330px;
-    margin-left: 6%;
-    font-size: 1.2em;
-    color: #fcbf49;
-}
-.pros {
+
+.projects {
     width: 100%;
     height: 700px;
 }
-.pros h1{
+
+.projects h1 {
     margin-top: 15px;
     text-align: center;
     color: #003049;
     font-size: 3em;
 }
+
 .sur {
     width: 40%;
     height: 280px;
@@ -208,21 +198,24 @@ p {
     margin-left: 8%;
     border-radius: 17%;
     margin-top: 30px;
-    box-shadow: 0px 20px #d62828;   
+    box-shadow: 0px 20px #d62828;
     cursor: pointer;
     max-width: 500px;
 }
+
 .wip1 {
     padding-bottom: 10px;
 }
-.sur h1{
+
+.sur h1 {
     background-color: transparent;
     font-size: 2.3em;
     margin-top: 10px;
     cursor: pointer;
     color: #d62828;
 }
-.sur p{
+
+.sur p {
     background-color: transparent;
     margin-left: 10px;
     font-size: 1.1em;
@@ -231,7 +224,8 @@ p {
     padding-top: 10px;
     color: #003049;
 }
-.hcsy{
+
+.hcsy {
     width: 40%;
     height: 470px;
     background-color: #fcbf49;
@@ -244,13 +238,15 @@ p {
     cursor: pointer;
     max-width: 500px;
 }
+
 .hcsy h1 {
     background-color: transparent;
     font-size: 2.1em;
     margin-top: 10px;
     color: #d62828;
 }
-.hcsy p{
+
+.hcsy p {
     background-color: transparent;
     margin-left: 10px;
     padding-top: 30px;
@@ -258,8 +254,9 @@ p {
     width: 90%;
     margin: 0 auto;
     font-size: 1.2em;
-    color: #003049 ;
+    color: #003049;
 }
+
 .hole {
     width: 40%;
     height: 470px;
@@ -268,16 +265,18 @@ p {
     border-radius: 17%;
     margin-top: 30px;
     box-shadow: 0px 20px #d62828;
-    padding-top: 10px; 
-    cursor: pointer;  
+    padding-top: 10px;
+    cursor: pointer;
     max-width: 500px;
 }
+
 .hole h1 {
     background-color: transparent;
     font-size: 2.3em;
     margin-top: 10px;
     color: #d62828;
 }
+
 .hole p {
     background-color: transparent;
     margin-left: 10px;
@@ -291,6 +290,7 @@ p {
     margin: 0 auto;
     color: #003049;
 }
+
 .more {
     width: 40%;
     height: 280px;
@@ -304,13 +304,15 @@ p {
     cursor: pointer;
     max-width: 500px;
 }
+
 .more h1 {
     background-color: transparent;
     font-size: 2.3em;
     margin-top: 10px;
     color: #d62828;
 }
-.more p{
+
+.more p {
     background-color: transparent;
     margin-left: 10px;
     font-size: 1.2em;
@@ -323,6 +325,7 @@ p {
     margin: 0 auto;
     color: #003049;
 }
+
 .space {
     height: 50px;
     width: 400px;
@@ -334,6 +337,7 @@ p {
     src: url('Fonts/cartograph-cf/CartographCF-Bold.ttf');
     color: #d62828;
 }
+
 #projects-link {
     text-decoration: none;
     color: #003049;
